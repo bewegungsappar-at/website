@@ -1,0 +1,39 @@
+baseurl = "https://www.crashing.systems/phail-alarm/"
+languageCode = "en"
+title = "bewegungsappar.at"
+copyright = "copyright frei ab 100€"
+paginate = 3
+
+publishDir = "docs"
+
+theme = "minimage"
+
+[params]
+  description = "I like to move it, move it "
+  author = "hacKNology e.V."
+  logo = 'img/flotte.jpg'
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[[menu.global]]
+    name = "software"
+    url = "/post/software/"
+
+[[menu.global]]
+    name = "electronics"
+    url = "/post/electronics/"
+
+[[menu.global]]
+    name = "mechanical"
+    url = "/post/mechanical/"
+
+[[menu.global]]
+    name = "fleet at headquater"
+    url = "/post/infatery/"
+
+[[menu.footer]]
+    name = "About"
+    url = "/page/about/"
+
