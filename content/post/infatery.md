@@ -7,5 +7,5 @@ menu = "main"
 +++
 
 ### Fuel
-![alt text here, please](/phail-alarm/img/fuel.jpg "fuel to power the bewegungsapper.at fleet at the headquarter")
+![alt text here, please](/img/fuel.jpg "fuel to power the bewegungsapper.at fleet at the headquarter")
 And of course by C3WOC

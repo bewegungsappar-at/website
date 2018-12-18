@@ -1,4 +1,4 @@
-baseurl = "bewegungsappar.at"
+baseurl = "http://bewegungsappar.at/"
 languageCode = "en"
 title = "bewegungsappar.at"
 copyright = "copyright frei ab 100€"

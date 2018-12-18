@@ -16,4 +16,4 @@ Die Datein, welche relevant sind liegen unter ```content/```. Bilder liegen unte
 
 ____
 
-Die website ist derzeit unter https://www.crashing.systems/phail-alarm/ erreichbar, die Quellen hierfür liegen unter https://github.com/BruegelN/phail-alarm (privat)
+Die website ist derzeit unter ~~https://www.crashing.systems/phail-alarm/~~ http://bewegungsappar.at erreichbar, die Quellen hierfür liegen unter https://github.com/BruegelN/phail-alarm (privat)
