@@ -1,5 +1,5 @@
 +++
-title = "electronics for bewegungsapper.at"
+title = "electronics for bewegungsappar.at"
 description = "aaaaaaaaaaaa"
 tags = [
     "arduino",
