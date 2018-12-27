@@ -6,4 +6,5 @@ image = 'img/software.png'
 menu = "main"
 +++
 
-this is software. it's always broken
+# Motor control software
+based on [hoverboard-firmware-hack](https://github.com/NiklasFauth/hoverboard-firmware-hack)
