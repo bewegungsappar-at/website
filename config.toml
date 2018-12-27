@@ -1,7 +1,7 @@
 baseurl = "https://bewegungsappar.at/"
 languageCode = "en"
 title = "bewegungsappar.at"
-copyright = "copyright frei ab 100€"
+copyright = "meet us at 35c3 at  the hacKNology assembly Hall 3.10. Or contact phail for further Information: 35C3 DECT 3154"
 paginate = 3
 
 publishDir = "docs"
