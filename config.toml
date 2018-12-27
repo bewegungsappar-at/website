@@ -30,7 +30,7 @@ theme = "minimage"
     url = "/post/mechanical/"
 
 [[menu.global]]
-    name = "fleet at headquater"
+    name = "fleet at headquarter"
     url = "/post/infatery/"
 
 [[menu.footer]]
