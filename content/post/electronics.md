@@ -7,7 +7,7 @@ tags = [
     "pcb",
     "hardware",
 ]
-date = "2014-04-02"
+date = "2018-12-12"
 image = 'img/pcb.jpg'
 menu = "main"
 +++

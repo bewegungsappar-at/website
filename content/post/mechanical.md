@@ -1,7 +1,7 @@
 +++
 title = "mechanical parts for bewegungsappar.at"
 description = "mechanical"
-date = "2014-04-02"
+date = "2018-12-12"
 image = 'img/werkstatt.jpg'
 menu = "main"
 +++
