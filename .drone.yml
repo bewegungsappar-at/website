@@ -1,0 +1,37 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: submodules
+    image: alpine/git
+    commands:
+      - git submodule update --init --recursive
+  - name: build
+    image: xperimental/hugo:0.58.3
+    commands:
+      - hugo -t minimage
+#  - name: publish
+#    image: alpine
+#    volumes:
+#      - name: output
+#        path: /output
+#    commands:
+#      - apk add rsync
+#      - rsync -av --del ./docs/ /output/
+#      - chown -R 33:33 /output
+    when:
+      branch:
+        - master
+        - drone
+  - name: verify
+    image: xperimental/linky:0.3.0
+    commands:
+      - linky https://bewegungsappar.at/
+    when:
+      branch:
+        - master
+        - drone
+#volumes:
+#- name: output
+#  host:
+#    path: /var/www/html
