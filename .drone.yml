@@ -22,7 +22,6 @@ steps:
     when:
       branch:
         - master
-        - drone
   - name: verify
     image: xperimental/linky:0.3.0
     commands:
@@ -30,7 +29,6 @@ steps:
     when:
       branch:
         - master
-        - drone
 volumes:
 - name: output
   host:
