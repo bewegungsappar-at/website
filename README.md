@@ -5,7 +5,7 @@ repo clonen:
 
 Als static site generator wird __hugo__ verwendet. Installationsanleitung: https://gohugo.io/getting-started/installing/
 
-Die website wird mit githubpages gehostet, hierfür werden anstelle von __.md__-Dateien HTML,CSS und JavaScript Dateien benötigt. Diese befinden sich im Ordner ```docs/```.
+Die website wird mit githubpages gehostet, hierfür werden anstelle von __.md__-Dateien HTML,CSS und JavaScript Dateien benötigt. Diese befinden sich im Ordner ```public/```.
 
 Der aktuelle Stand der website wird mit ```hugo -t minimage``` generiert.
 
