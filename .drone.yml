@@ -10,15 +10,15 @@ steps:
     image: xperimental/hugo:0.58.3
     commands:
       - hugo -t minimage
-#  - name: publish
-#    image: alpine
-#    volumes:
-#      - name: output
-#        path: /output
-#    commands:
-#      - apk add rsync
-#      - rsync -av --del ./docs/ /output/
-#      - chown -R 33:33 /output
+  - name: publish
+    image: alpine
+    volumes:
+      - name: output
+        path: /output
+    commands:
+      - apk add rsync
+      - rsync -av --del ./docs/ /output/
+      - chown -R 33:33 /output
     when:
       branch:
         - master
@@ -31,7 +31,7 @@ steps:
       branch:
         - master
         - drone
-#volumes:
-#- name: output
-#  host:
-#    path: /var/www/html
+volumes:
+- name: output
+  host:
+    path: /var/www/bewegungsapparat
