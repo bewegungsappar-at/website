@@ -17,3 +17,5 @@ Die Datein, welche relevant sind liegen unter ```content/```. Bilder liegen unte
 ____
 
 Die website ist derzeit unter https://bewegungsappar.at erreichbar.
+
+[![Build Status](https://ci.hacknology.de/api/badges/bewegungsappar.at/website/status.svg)](https://ci.hacknology.de/bewegungsappar.at/website)
