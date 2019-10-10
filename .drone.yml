@@ -17,7 +17,7 @@ steps:
         path: /output
     commands:
       - apk add rsync
-      - rsync -av --del ./docs/ /output/
+      - rsync -av --del ./public/ /output/
       - chown -R 33:33 /output
     when:
       branch:
