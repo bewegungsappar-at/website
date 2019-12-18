@@ -1,0 +1,45 @@
+{{ define "main" }}
+  {{ $pages := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 5 }}
+
+  <div class="p-archive">
+    <div class="c-container">
+      <p>
+      Once upon a time at the GPN18 (<a href="https://www.entropia.de/GPN18">https://www.entropia.de/GPN18</a>) when two brave hacKNologists had <strike>no life anymore</strike> started to enthuse about hoverboards.
+    </p>
+    <br>
+    <p>
+      Inspired by the excellent work of Niklas Fauth and Jan Henrik Hemsing with their hoverboard-firmware-hack an addiction started. A recording of the Moving Objects talk can be found at <a href="https://media.ccc.de/v/gpn18-95-howto-moving-objects">https://media.ccc.de/v/gpn18-95-howto-moving-objects</a>.
+    </p>
+    <br>
+    <p>
+      The main focus was to build vehicles for smaller transportation tasks. This resulted in a small wooden board for indoor usage and a heavy duty one for outdoor transportation tasks.
+    </p>
+    <br>
+    <p>
+      Even countless setbacks on the hardware and software side could not slow down the creativity. The urgent need to use gyroscope and acceleration sensors for control gave birth to the stylish new electro-mobile way of movement with the Paddelec.
+    </p>
+    <br>
+    <p>
+      At the Winter-GPN18* (* also known as 35th Chaos Communication Congress, 35c3) the models of <a href="https://bewegungsappar.at">bewegungsappar.at</a> were presented to the public for the first time.
+    </p>
+    <br>
+    <p>
+      Only 42 hours before the event a sculpture was finished. It's main purpose is to showcase the analog control wire for the "follow me mode".
+      <strong> The "Wireshark".</strong> You are allowed to say <i>Hai</i>.
+    </p>
+    <br>
+    <p>
+      Visitors from now can test this new mode of locomotion at other upcoming chaos events.
+    </p>
+    <br>
+      <ul class="c-archive-list">
+      {{ range $pages.Pages }}
+        {{ .Render "li" }}
+      {{ end }}
+      </ul>
+
+      {{ partial "pagenation.html" . }}
+    </div>
+  </div>
+
+{{ end }}
