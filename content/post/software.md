@@ -1,32 +1,21 @@
 +++
 title = "software for bewegungsappar.at"
 description = ""
-date = "2018-12-12"
+date = "2019-12-29"
 image = 'img/software.png'
 menu = "main"
 +++
 
-# Motor control software
-Github Repo: https://github.com/p-h-a-i-l/hoverboard-firmware-hack (based on [hoverboard-firmware-hack](https://github.com/NiklasFauth/hoverboard-firmware-hack))
+# Motor Control
+Heavily modified version of the hoverboard-firmware-hack software. See https://github.com/bipropellant/bipropellant-hoverboard-firmware.
+Added features include sensor Feedback and an advanced serial protocol as well as sinus commutation and some safety features.
 
-Modified code with lots of improvements with a focus on serial communication and parallel use of ADCs as input. "transpotter" like control can be configured just via parameters.
+Currently used branch is here: https://github.com/p-h-a-i-l/bipropellant-hoverboard-firmware/tree/protocolCOBSR with lots of stability improvements for the serial protocol.
 
-Changes to [hoverboard-firmware-hack](https://github.com/NiklasFauth/hoverboard-firmware-hack)
+# Wireless communication
+Relaying of the Serial protocol via WiFi with UDP between some ESP32 microcontrollers.
+Currently used code here: https://github.com/bewegungsappar-at/hoverboard-control/tree/protocolCOBSR
 
-* Build Environment is platform.io. Old Makefile based system should work too, but not tested.
-* UART Control can be configured to Connect to USART2 or USART3
-* Added CRC Checksum to UART Control. This way, the protocol just loses sync but the board does not try to kill you anymore (at least less often)
-* UART Control and Debug can be active on the same cable
-* Extended ADC Input Control config options. Default is platooning / "transpotter"
-* ADC Input Control can coexist with all other control Methods as long as the other Method uses the other cable
-* Watchdog Implemented which monitors if main is still running. Stops motors and shuts down if not.
-* Serial Protocol implemented (very shrunk down version from [btsimonhs pidcontrol](https://github.com/btsimonh/hoverboard-firmware-hack))
-  * PWM can be set and read
-  * Human readable ASCII Protocol can coexist with machine parseable Messages
-  * Buzzer commands
-  * Hall Interrupts for Speed Feedback
-
-# Wireles Interface Module and Paddelec Remote Control
-ESP32 with Acceleration Sensor and Gyro, OLED Display. Serial communication to Motor control board, ESPnow link between ESPs.
-
-see https://git.hacknology.de/phail/bewegungsappar.at_control
+# Paddel Algorithm
+A 6-Axis IMU is used to sense the movement of the driver. The Acceleration sensor is used to get an absolute value of the paddle angle, when tilted to one side, the gyro values are used to calculate the paddle tip speed.
+The paddle tip speed is then compared with the actual wheel speed and based on the difference, the speed is adjusted

@@ -1,14 +1,14 @@
 +++
 title = "mechanical parts for bewegungsappar.at"
 description = "mechanical"
-date = "2018-12-12"
+date = "2019-12-28"
 image = 'img/werkstatt.jpg'
 menu = "main"
 +++
 
 Technically there are a few different configurations of  __bewegungsappar.at__ we have currently deployed.
 
-## woodenboard
+## Wireshark
 The one which might be most familliar for most of you is the __woodenboard__. It is designed using computer-aided designed base plate. The base plate was then cut using a CNC router.
 __woodenboard__ was constructed to carry a Mate crate lengthways _or_ to fit one eurobox/two beverage crates orthogonal. Thus it can either be used as a transport vehicle or for cruising around by utilising the single crate as a seat.
 
@@ -21,7 +21,7 @@ __psychos' board__ is build using lightweight aluminium profiles.
 This makes it possible to be used as a human transportation device as well.
 ![psychos' board with a seat](/img/psycho-board-seat.jpg "psychos' board with a seat")
 
-## paddelec
+## Paddelec
 The most advanced version of __bewegungsappar.at__ currently depolyed is __paddelec__.
 The central part is an kayak.
 The kayak is mounted to a welded frame.
