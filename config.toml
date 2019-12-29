@@ -20,16 +20,8 @@ theme = "minimage"
     url = "/post/software/"
 
 [[menu.global]]
-    name = "electronics"
-    url = "/post/electronics/"
-
-[[menu.global]]
     name = "mechanical"
     url = "/post/mechanical/"
-
-[[menu.global]]
-    name = "fleet at headquarter"
-    url = "/post/infatery/"
 
 [[menu.footer]]
     name = "About"
