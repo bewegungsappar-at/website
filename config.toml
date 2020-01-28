@@ -1,7 +1,7 @@
 baseurl = "https://bewegungsappar.at/"
 languageCode = "en"
 title = "bewegungsappar.at"
-copyright = "meet us at 36c3 at the hacKNology assembly. Or contact phail for further Information: phail@bewegungsappar.at"
+copyright = "Contact phail for further Information: phail@bewegungsappar.at"
 paginate = 3
 
 theme = "minimage"
@@ -20,8 +20,12 @@ theme = "minimage"
     url = "/post/software/"
 
 [[menu.global]]
-    name = "mechanical"
+    name = "Overview"
     url = "/post/mechanical/"
+
+[[menu.global]]
+    name = "Wireshark"
+    url = "/post/wireshark/"
 
 [[menu.footer]]
     name = "About"

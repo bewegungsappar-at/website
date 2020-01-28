@@ -9,10 +9,12 @@ menu = "main"
 Technically there are a few different configurations of  __bewegungsappar.at__ we have currently deployed.
 
 ## Wireshark
-The one which might be most familliar for most of you is the __woodenboard__. It is designed using computer-aided designed base plate. The base plate was then cut using a CNC router.
-__woodenboard__ was constructed to carry a Mate crate lengthways _or_ to fit one eurobox/two beverage crates orthogonal. Thus it can either be used as a transport vehicle or for cruising around by utilising the single crate as a seat.
+The one which might be most familliar for most of you is the __wireshark__. It is designed using computer-aided designed base plate. The base plate was then cut using a CNC router.
+__wireshark__ was constructed to carry a Mate crate lengthways _or_ to fit one eurobox/two beverage crates orthogonal. Thus it can either be used as a transport vehicle or for cruising around by utilising the single crate as a seat.
 
-![woddenboard](/img/woddenboard.jpg "woddenboard")
+For details and 3D Models see [wireshark](/post/wireshark/)
+
+![wireshark](/img/woddenboard.jpg "wireshark")
 
 ## psychos' board
 Bigger, more advanced and more durable than the woddenboard is psychos' __bewegungsappar.at__. It is longer, allowing it to carry up to three beverage crates on it's baseplate.
