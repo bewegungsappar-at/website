@@ -7,7 +7,7 @@ steps:
     commands:
       - git submodule update --init --recursive
   - name: build
-    image: xperimental/hugo:0.58.3
+    image: xperimental/hugo:0.72.0
     commands:
       - hugo -t minimage
   - name: publish
@@ -23,7 +23,7 @@ steps:
       branch:
         - master
   - name: verify
-    image: xperimental/linky:0.3.0
+    image: xperimental/linky:0.4.0
     commands:
       - linky https://bewegungsappar.at/
     when:
